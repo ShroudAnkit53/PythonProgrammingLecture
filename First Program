@@ -1,0 +1,8 @@
+print("Hello World!!", 8)
+print(56)
+print("Bye Bye!!")
+print(17*3)
+
+print("Hey I am a Good boy \nand the viewer is also a good boy/girl")
+# \n is known as Escape Sequence Character used for adding new line -> It is a comment
+# Use Ctrl+/ to comment or uncomment any commeent statement
