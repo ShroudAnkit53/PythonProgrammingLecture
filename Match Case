@@ -1,0 +1,25 @@
+# Like in Java,C,C++ we use switch statements,Similarly we use 'match' case
+
+# Let's take an example of which number is divisible by 4 and what remainder it leaves
+A = int(input("What's your number ?"))
+B = A%4
+if B==0:
+    print("Remainder is: 0")
+elif B==1:
+    print("Remainder is: 1")
+elif B==2:
+    print("Remainder is: 2")
+elif B==3:
+    print("Remainder is: 3")
+
+match B:
+    case 0: # If remainder is 
+        print("The number",A,"is divisible by 4 and leaves remainder 0")
+    case 1: # If remainder is 1
+        print("The number",A,"is not divisible by 4 and leaves remainder 1") 
+    case 2: # If remainder is 2
+        print("The number",A,"is not divisible by 4 and leaves remainder 2") 
+    case 3: # If remainder is 3
+        print("The number",A,"is not divisible by 4 and leaves remainder 3")
+    case _:
+        print("Nothing!!") 
