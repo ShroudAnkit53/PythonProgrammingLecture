@@ -1,0 +1,67 @@
+# There are 3 conditional statements:- If/Elif(Else if)/Else
+
+# The below code is an example of if-else statement
+age = int(input("What's your age: "))
+print("Your age is",age)
+# Let's take first example for voting
+if(age>=18):
+    print("You can vote")
+else:
+    print("You can't vote")
+
+#Let's take another example for getting driving licence and for driving
+if(age>18):
+    print("You can get a driving licence and you can drive")
+else:
+    print("You cann't get a driving licence and you cann't drive")
+
+# the below code is an example of if-elif-else statement
+N = int(input("What's your number ?"))
+
+if(N>0):
+    print("Your number is",N," which is positive")
+elif(N==0):
+   print("Your number is",N," which is equal to 0") 
+else:
+    print("Your number is",N," which is negative")
+
+# Let's take an example of nested statements
+N = int(input("What's your number ?"))
+
+if(N < 0):
+    if(N < 0 and N > -10):
+       print("Your number is",N,"is negative and present in the range of -10 < N <0")
+    elif(N < -10 and N > -30):
+        print("Your number is",N,"is negative and present in the range of -30 < N < -10")
+    elif(N < -30 and N > -50):
+        print("Your number is",N,"is negative and present in the range of -50 < N < -30")
+    else:
+        print("Your number is",N,"is negative and present in the range of -infinity < N < -50")
+elif(N > 0):
+    if(N > 0 and N < 10):
+        print("Your number is",N,"is positive and present in the range of 0 < N < 10")
+    elif(N > 10 and N < 30):
+        print("Your number is",N,"is positive and present in the range of 10 < N < 30")
+    elif(N > 30 and N < 50):
+        print("Your number is",N,"is positive and present in the range of 30 < N < 50")
+    else:
+        print("Your number is",N,"is positive and present in the range of 50 < N < infinity")
+else:
+    print("The number is 0")
+
+# Exercise:- Create a greeting of good morning , good evening etc. using time module
+import time
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+A = int(time.strftime('%H'))
+print(A)
+if(A >= 5 and A < 12):
+    print("Hey, Good morning!!")
+elif(A >= 12 and A < 16):
+    print("Hey, Good Afternoon!!")
+elif(A >= 16 and A < 23):
+    print("Hey, Good evening!!")
+elif(A >=23 and A <=24):
+    print("Hey,Good night!!")
+else:
+    print("Hey, All are sleeping right now!!")
