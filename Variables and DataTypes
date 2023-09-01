@@ -1,0 +1,27 @@
+# Question:- What is Variables?
+# Answer:- Variable is like a container that holds data. E.g Let a=56 here 'a'is variable.
+
+# Question:- What is Data Types?
+# Answer:- Data Type specifies the type of value a variables holds.
+
+a = 3     # It is a Integer Data Type
+print(a)
+
+Harry = 8
+b = Harry # It will print 8 because it can't understand whether to print Harry or not
+print(b)
+
+c="Harry"  # It is a String Data Type
+print(c)
+
+a1 = 9
+print(a + a1)
+
+print("Type of a is: ",type(a))
+print("Type of c is: ",type(c))
+
+# Basically, there are 4 different data types:-
+# 1. Numeric Data Type:- int,float,complex
+# 2. Text Data Type:- str
+# 3. Boolean Data:- It consists of true or False
+# 4. Sequenced Data Type:- list,tuple
