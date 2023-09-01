@@ -1,0 +1,37 @@
+# Question:- What is Python ? 
+# Ans:- * Python is a dynamically typed, general purposing programming language that supports an object-oriented       programming as well as functional programming approach. 
+# * Python is an interpreted and a high level programming language.
+# * It was created by Guido van Rossoum in 1989.
+# 
+# Features of Python:-
+# -> It is simple and easy to understand.
+# -> It is interpreted and platform independent which makes debugging very easy.
+# -> It is an open source programming language.
+# -> It is possible to integrate other programming language withinh python.
+#
+# What is Python used for ?
+# // It is used in Data Visualization to create plots and graphical representation.
+# // It is used to create web applications.
+# // It can be used to handle databases.
+# // It is used in business and accounting to perform complex mathematical operations along with quantitative and qualitative analysis.
+# // It is used in AI and Machine Learning to simulate human behaviour and to learn from past data without hard coding.
+# // Python helps in Data Analytics to analyze and understand raw data for insights and trends.
+
+# Print "Hello World" & any number
+print("Hello World") # print function helps in to print the statement. In java we used to write 'System.out.println'
+print(9)
+
+# Strings:- In python, anything that you enclose between single or double quotation marks is considered as a string
+# Let's take an example,
+A = "Ankit"
+B = 'Adarsh'
+print("Hi!! My name is",A," and my good friend is",B)
+# Accessing characters from a given string:-
+# String is just like an array of characters present in it
+print(A[0])
+print(A[4])
+print(B[0])
+print(B[5])
+# Looping through the string:-
+for character in B:
+    print(character)
