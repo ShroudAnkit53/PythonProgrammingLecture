@@ -1,0 +1,45 @@
+# The conversion of one data type to other data type.
+
+a = "23" # It is in string format as double-quote is used
+print(a)
+b = 9
+print(int(a)+b) # Here int(a) is used to convert from string to integer. So, 23 + 9 = 32
+
+print(a+str(b)) # Here str(b) is uded to convert from integer to string. So it will not print 32 but it will print 239
+
+# -> Python supports a wide vareity of functions or methods like: int(),float(),str(),ord(),hex(),oct(),tuple(),set(),list(),dict() etc for the type casting in python.
+
+# Two types of type casting:-
+# -> Explicit Typecasting:- The conversion of one data type to other data type,done via developer or programmer's intervention or manually as per the requirement, is known as explicit typecasting
+# Below is the example of explicit typecasting
+
+String = "15"
+number = 3
+String_number = int(String)
+
+sum = number+String_number
+print("Sum is: ",sum)
+
+# -> Implicit Typecasting:- In this, method, Python converts the datatype into another datatype automatically. Users don’t have to involve in this process.  
+
+# Python automatically converts
+# a to int
+a = 7
+print(type(a))
+ 
+# Python automatically converts
+# b to float
+b = 3.0
+print(type(b))
+ 
+# Python automatically converts
+# c to float as it is a float addition
+c = a + b
+print(c)
+print(type(c))
+ 
+# Python automatically converts
+# d to float as it is a float multiplication
+d = a * b
+print(d)
+print(type(d))
