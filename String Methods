@@ -1,0 +1,47 @@
+# First String method:- upper() -> it will change all the characters from lower to upper
+# Second String method:- lower() ->it will change all the characters from upper to lower
+# Strings are immutable
+# Let's take an example:-
+A = "AnkiT & AdaRsH"
+print(A.upper())
+print(A.lower())
+
+# Third string method:- rstrip() -> it will remove any trailing characters
+# Fourth string method():- replace() -> it will replace the string with another string
+B = "Ankit!!"
+print(B.rstrip("!"))
+print(B.replace("Ankit", "Adarsh"))
+
+# Fifth string method:- split() -> this method splits the given string at the specified instance and returns the separated instance and returns the separated strings as list items
+C = "!!Ankit!! !!Adarsh!! !!Basu!!"
+print(C.split(" "))
+
+# Sixth string method:- captialize() -> Only converts the first character from lower to upper
+# Seventh string method:- center() -> It align the string to center
+# Eigth string method:- endswith() -> check whether the given character ends or not
+D = "ankit"
+print(D.capitalize())
+print(D.center(25))
+E = "Ankit!!"
+print(E.endswith("t"))
+print(E.endswith("t!!", 2,7))
+
+# Ninth string method:- find() -> it will find the character in the string and returns index if it is found
+F = "He's is Dan"
+print(F.find("Dan"))
+
+# Tenth string method:- isalnum() -> it will check whether the string contains A-Z,a-z,0-9(i.e alphanumerical)
+# Eleventh string method:- isalpha() -> it will check whether the string contains A-Z,a-z(i.e alphabetical)
+G = "Welcome to the Python programming world!!"
+print(G.isalnum())
+print(G.isalpha())
+
+# Twelevth string method:- isspace() -> Check whether it string has space
+# Thirteenth string method:- istitle() -> check whether all words in string start with capital
+# Fourteenth string method:- swapcase() -> it converts upper to lower and lower to upper
+# Fifteenth string method:- title()
+H = "Welcome Bro. welcome to my house"
+print(H.isspace())
+print(H.istitle())
+print(H.swapcase())
+print(H.title())
