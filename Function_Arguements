@@ -1,0 +1,48 @@
+# There are 4 types of arguements that we can provide in a function:-
+# 1.Default Arguements
+# 2.Keyword Arguements
+# 3.Variable length Arguements
+# 4.Required Arguements
+
+def average(a=9 , b=4):  # This arguement is known as Default Arguements
+    avg = (a+b)/2
+    print("Average of",a,"&",b,"is:",avg)
+
+average()
+
+def average(a,b):  # This arguement is known as Required Arguements
+    avg = (a+b)/2
+    print("Average of",a,"&",b,"is:",avg)
+
+average(2,8)
+
+# Let's take another example
+def name(fname,mname="Kumar",lname="Sahoo"):
+    print("Hii,Myself",fname,mname,lname)
+
+name("Adarsh","Ranjan")
+name("Ankit")
+
+def average(*numbers):    # This arguement is known as Arbitary Arguements
+    print(type(numbers))
+    sum = 0
+    for i in numbers:
+        sum += i
+    print("Average is:",sum/len(numbers))
+
+average(9,4,7)
+
+def name(**name):  # This arguement is known as Keyboard Arbitary Arguements
+    print("Hello,",name["fname"],name["mname"],name["lname"])
+
+name(fname="Ankit",mname="Kumar",lname="Sahoo")
+
+# Let's take another example of Arbitary Arguements
+def average(*numbers):
+    sum = 0
+    for i in numbers:
+        sum += i
+    return sum/len(numbers)
+
+c = average(1,2,3,4)
+print("Average is:",c)
