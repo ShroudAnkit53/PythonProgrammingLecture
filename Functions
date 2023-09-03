@@ -1,0 +1,21 @@
+# Python Function:- A block of code that performs a specific task whenever it is called.
+
+# There are 2 types of function:-
+# 1. Built-in functions:- These functions are defined and pre-coded in python. Some examples are:-min(),max(),len(),sum(),type(),range(),dict(),tuple(),list(),print() etc.
+
+# 2. User-defined functions:- We can create function to perform specific tasks as per our needs.
+
+def calculateGmean(a,b):
+   Gmean = (a*b)/(a+b)
+   print(Gmean)
+
+def isGreater(a,b):
+   if(a > b):
+      print("First number is greater!!")
+   elif(a == b):
+      print("Both numbers are equal!!")
+   else:
+      print("Second number is greater!!")
+
+isGreater(9,18)
+calculateGmean(9,18)
