@@ -1,0 +1,51 @@
+# Python Lists:-
+# 1. Lists are ordered collection of data items.
+# 2. They store multiple items in a single variable.
+# 3. List items are separated by commas and enclosed within square brackets[].
+# 4. Lists are changeable meaning we can alter them after creation
+# 5. In Java, we used to have Array.Here, in Python, similarly lists works as an array.
+
+l = [3 , 5 , 8]
+print(l)
+print(type(l))
+
+# Let's take an example of list of containing marks out of 20 of 5 students.
+marks = [20 , 13 , 17 , 9 , 11]
+print(marks)
+print(type(marks))
+print(marks[0])
+print(marks[3])
+# print(marks[5])  Here, it will show error that index is out of range
+
+print(marks[-3])   # Negative indexing
+print(marks[len(marks)-3])   # Simple way to convert negative indexing to positive indexing
+print(marks[5-3])
+print(marks[2])
+
+# E.g Check whether a given item is present in list or not
+marks = [23,24,15,18,9,2,29,30,9,20]
+if 9 in marks:
+  print("Yes, it is present")
+else:
+  print("No, it is not present")
+
+# E.g printing elements within a given particular range
+animals = ["cat","dog","elephant","tiger","lion","zebra"]
+print(animals[:])
+print(animals[1:])
+print(animals[1:-1]) # -1 = len(animals)-1 = 6-1 = 5 animals[1:5]
+
+# Jump concept
+A = [1,2,3,4,5,6,7,8,9,10]
+print(A[:])
+print(A[1:8])
+print(A[1:8:3]) # last 3 indicate that's it jumps 3 times
+
+# List comprehension
+# -> List comprehension are used for creating new lists from other iterables like lists,tuples,dictionaries,sets and even in arrays and strings
+lst = [i for i in range(5)]
+print(lst)
+lst = [i*i for i in range(5)]
+print(lst)
+lst = [i*i for i in range(20) if i%2==0]
+print(lst)
