@@ -1,0 +1,23 @@
+# Python Tuples:-
+# -> Tuples are ordered collection of data items.They store multiple items in a single variable.Tuple items are separated by commas and enclosed within round brackets().
+     Tuples are unchangeable meaning we can't alter them after creation.
+
+tup = (1,3,5)
+print(type(tup), tup)
+print(tup[2])
+print(tup[-1]) # It is equal to tup[2] #negative indexing
+
+A = (1)  # It will show class int.To show class tuple you have to use commas
+print(type(A), A)
+A = (1,)
+print(type(A), A)
+
+# Check for item
+country = ("Germany","India","Belgium","Argentina","Australia","England")
+if "Germany" in country:
+    print("Germany is present")
+else:
+    print("Germany is not present")
+print(len(country))
+country2 = country[1:4]
+print(country2)
