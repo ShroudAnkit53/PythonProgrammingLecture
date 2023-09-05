@@ -1,0 +1,38 @@
+# List Methods:-
+
+# 1. First Method:- list.append() -> It will add any element to the list at the end
+# 2. Second Method:- list.sort() -> It will sort the elements in ascending order
+# 3.Third Method:- list.reverse() -> It will reverse the original list
+l = [3,7,2,6]
+print(l)
+l.append(4)
+print(l) # Output:-[3,7,2,6,4]
+l.sort()
+print(l) # Output:-[2,3,4,6,7]
+l.reverse()
+print(l) # Output:-[7,6,4,3,2]
+
+# 4.Fourth Method:- list.index() -> It will print the index of first occurence of element in the list
+# 5.Fifth Method:- list.count() -> It will count the number of occurences of the items in the list
+# 6.Sixth Method:- list.copy() -> It will copy the list
+colours = ["Green","Blue","Yellow","Red","Black","Blue","Red"]
+new = colours.copy()
+print(colours.index("Red")) # Output:- 3
+# print(colours.index("Orange")) # Output:- "Orange is not in the list"
+print(colours.count("Blue")) # Output:- 2
+print(new) # Output:- ["Green","Blue","Yellow","Red","Black","Blue","Red"]
+
+# 7.Seventh Method:- list.insert() -> This method inserts an item at the given index. User has to specify index and the item to be inserted within insert() method.
+# 8.Eighth Method:- list.extend() -> This method adds an entire list or any other collection datatype to the existing list
+A = [2,4,6,8,10]
+B = [1,3,5,7,9]
+A.insert(2, 5)
+print(A)
+A.extend(B)
+print(A)
+
+# Concatenating 2 lists
+A = [2,6,7,8]
+B = [10,2,3,6,9,21]
+C = A+B
+print(C)
