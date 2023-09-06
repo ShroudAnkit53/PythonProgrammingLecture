@@ -1,0 +1,67 @@
+# Create a quiz game like KBC("Kaun Banega Crorepati"/"Who will be the millionaire?(english)")
+import random
+
+name = input("What's Your Name?:")
+city = input("Enter your city: ")
+print("Namaskar, mera naame hai Amitabh Bachchan aur aaiye shuru karte hai yeh adbhut khel jiska naam hai Kaun banega Crorepati, Let's begin the game")
+print("Mere saath hot seat par baithe hai",name,"jo ki",city,"mein rehte hai")
+
+questions = [
+    ("What is the capital of France?", ["A) London", "B) Berlin", "C) Paris", "D) Madrid"], "C"),
+    ("Which planet is known as the 'Red Planet'?", ["A) Earth", "B) Mars", "C) Jupiter", "D) Venus"], "B"),
+    ("What is the largest mammal in the world?", ["A) Elephant", "B) Giraffe", "C) Blue Whale", "D) Lion"], "C"),
+    ("Which gas do plants absorb from the atmosphere?", ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"], "C"),
+    ("Which famous scientist formulated the theory of relativity?", ["A) Isaac Newton", "B) Albert Einstein", "C) Galileo Galilei", "D) Stephen Hawking"], "B"),
+    ("Which footballer created a record of most number of goals scored in the history of premier league?", ["A) Erling Haaland", "B) Wayne Rooney", "C) Harry Kane", "D) Christopher Nkunku"], "A"),
+    ("What is the national anthem of Bangladesh?", ["A) Jana gana mana", "B) Amar Sonar Bangla", "C) God Save the King", "D) Quami Taranah "], "B"),
+    ("Who was the runners up of the IPL 2012?", ["A) CSK", "B) RCB", "C) KKR", "D) SRH"], "A"),
+    ("Who is the protagonist of movie 'My Fault'?", ["A) Gabriel Guevara", "B) Fran Berengaur", "C) Nicole Wallace", "D) Marta Hazas"], "A"),
+    ("What is the name of the monkey god who played a pivotal role in helping Rama rescue Sita??", ["A) Lord Hanuman", "B) Ravana", "C) King Dasaratha", "D) Lord Rama"], "A"),
+    ("Who is the current ICC Ranking no.1 all-rounder in ODI format?", ["A) Hardik Pandya", "B) Ravichandran Ashwin", "C) Shakib Al Hassan", "D) Ravindra Jadeja"], "C"),
+    ("Who sang the song:-'Mahiye Jinna Sohna'?", ["A) Badshah", "B) Darshan Raval", "C) Mika Singh", "D) Arijit Singh"], "B"),
+    ("Who was the champions of the ICC T20 World Cup 2022 and where it was held?", ["A) Pakistan, England & Wales", "B) Australia, New Zealand", "C) India, India", "D) England, Australia"], "D"),
+    ("Which country's flag doesn't have a square/ rectangular shape?", ["A) Nepal", "B) India", "C) Wales", "D) Argentina"], "A"),
+    ("(20+(23*10)/5-10)?", ["A) 35", "B) 40", "C) 100", "D) 23"], "B"),
+]
+
+# Initialize the game variables
+current_question = 0
+money = 0
+correct_count = 0
+
+# Shuffle the questions
+random.shuffle(questions)
+
+# Main game loop
+while current_question < len(questions):
+    question, options, correct_answer = questions[current_question]
+    
+    print(f"\nQuestion {current_question + 1}: {question}")
+    for option in options:
+        print(option)
+    
+    user_answer = input("Your answer: ").upper()
+    
+    # Check if the user's answer is correct
+    if user_answer == correct_answer:
+        print("Correct!")
+        correct_count += 1
+    else:
+        print(f"Sorry, that's incorrect. The correct answer is {correct_answer}.")
+        break
+    
+    current_question += 1
+
+# Display the final score
+if 0 <= correct_count < 5:
+    money = 0
+    print(f"\nCongratulations! You won Rs. {money} .")
+elif 5 <= correct_count < 10:
+    money = 10000
+    print(f"\nCongratulations! You won Rs. {money} .")
+elif 10 <= correct_count < 15:
+    money = 320000
+    print(f"\nCongratulations! You won Rs. {money} points.")
+else:
+    money = 10000000
+    print(f"\nCongratulations! You won Rs. {money} points.") 
