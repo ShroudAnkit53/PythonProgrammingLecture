@@ -1,0 +1,15 @@
+# f-strings in Python:-
+# When we prefix the string with the letter "f", the string becomes f-string itself. The f-string can be formatted in much same as the str.format() method. The f-string offers a convenient way to embed Python expression inside string literals for formatting
+
+A = "Hey my name is {} and I am from {}"
+name = "Ankit"
+country = "India"
+print(A.format(name, country))
+print(f"Hey my name is {name} and I am from {country}")
+
+B = "For only {price:.2f} dollars"  # Output = 49.10
+print(B.format(price = 49.0999))
+
+price = 49.0999
+B = f"For only {price:.3f} dollars"  # Output = 49.100
+print(B)
