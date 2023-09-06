@@ -1,0 +1,16 @@
+# Exercise:- Create a greeting of good morning , good evening etc. using time module
+import time
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+A = int(time.strftime('%H'))
+print(A)
+if(A >= 5 and A < 12):
+    print("Hey, Good morning!!")
+elif(A >= 12 and A < 16):
+    print("Hey, Good Afternoon!!")
+elif(A >= 16 and A < 23):
+    print("Hey, Good evening!!")
+elif(A >=23 and A <=24):
+    print("Hey,Good night!!")
+else:
+    print("Hey, All are sleeping right now!!")
