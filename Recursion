@@ -1,0 +1,42 @@
+# Recursion in Python:-
+# Let's take an example:-
+def factorial(n):
+    if(n == 1 or n == 0):
+        return 1
+    else:
+        return(n*factorial(n-1))
+    
+n = int(input("Enter number: "))
+print("The factorial of",n,"is",factorial(n))
+
+def power(n , pow):
+    if(pow == 1):
+        return n
+    else:
+        return n*power(n, pow-1)
+    
+n = int(input("Enter number: "))
+pow = int(input("Enter power: "))
+print("The number is",n,"and it's power is",pow,"and the result is",power(n, pow))
+
+def product(n , m):
+    if(m == 1):
+        return n
+    else:
+        return(n + product(n , m-1))
+    
+n = int(input("Enter number:"))
+m = int(input("Enter number:"))
+print("The multiplication of",m,"*",n,"is",product(n,m))
+
+def GCD(n , m):
+    if(n == m):
+        return n
+    elif(n > m):
+        return GCD(n-m , m)
+    else:
+        return GCD(n , m-n)
+    
+n = int(input("Enter first number:"))
+m = int(input("Enter second number:"))
+print("GCD of",m,"and",n,"is",GCD(n,m))
