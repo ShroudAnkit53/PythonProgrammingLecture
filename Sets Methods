@@ -1,0 +1,65 @@
+# First method:- union()
+# Second method:- intersection()
+# Third Method:- update()
+# Fourth Method:- intersection_update()
+s1 = {1,2,3,4}
+s2 = {2,3,5,6,7}
+s3 = s1.union(s2)
+s4 = s1.intersection(s2)
+print(s3)
+print(s4)
+s1.update(s2)
+print(s1)
+s5 = s1.intersection_update(s2)
+print(s5)
+
+# Fifth Method:- symmetric_difference()
+# Sixth Method:- symmetric_difference_update()
+cities = {"Tokyo","Seoul","Madrid","Delhi"}
+cities2 = {"Tokyo","Seoul","Madrid","Bhubaneswar"}
+cities3 = cities.symmetric_difference(cities2)
+print(cities3)
+
+# Seventh Method:- difference()
+# Eighth Method:- difference_update()
+# Ninth Method:- isdisjoint()
+cities = {"Tokyo","Seoul","Madrid","Delhi"}
+cities2 = {"Tokyo","Seoul","Madrid","Bhubaneswar"}
+cities3 = cities2.difference(cities)
+print(cities3)
+print(cities.isdisjoint(cities2))
+
+# Tenth Method:- issuperset()
+# Eleventh Method:- issubset()
+A = {1,2,3,4,5,6,7}
+B = {2,8,9}
+C = {1,2,3,4}
+print(A.issuperset(B))
+print(B.issubset(A))
+print(A.issuperset(C))
+print(C.issubset(A))
+
+# Twelevth Method:- remove()/discard()
+cities = {"Tokyo","Seoul","Madrid","Bhubaneswar"}
+cities.remove("Tokyo")
+print(cities)
+cities.discard("Tokyo")
+print(cities)
+cities.discard("Delhi")
+print(cities)
+
+# Thirteenth Method:- pop()
+# Fourteenth Method:- del
+A = {1,2,3,4,5,6,7}
+item = A.pop()
+print(A)
+print(item)
+del A
+print(A)
+
+# Check item
+A = {1,2,3,4,5,6,7}
+if 8 in A:
+    print("8 is present")
+else:
+    print("It is not present")
