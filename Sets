@@ -1,0 +1,13 @@
+# What is Sets ?
+# -> Sets are unordered collection of data items. They store multiple items in a single variable.It doesn't contain duplicate items
+
+info = {"Carla",5,9,9,False,"Carla"}
+print(info)
+
+harry = {}  # Empty dictionary
+print(type(harry))
+harry = set()  # Empty set
+print(type(harry))
+
+for value in info:
+    print(value)   # Print all the values of the sets & not print the duplicate items
