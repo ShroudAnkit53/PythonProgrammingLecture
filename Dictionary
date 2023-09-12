@@ -1,0 +1,20 @@
+# Dictionaries are ordered collection of data items.They store multiple items in single variable.
+info = {
+    "Name":"Karan",
+    "Age": 19,
+    "Eligible": True
+}
+print(info)
+print(info["Name"]) # Accessing dictionary items
+
+info = {
+    "Name":"Ankit",
+    "Age": 19,
+    "Eligible": True
+}
+print(info)
+print(info.keys()) # Accessing keys
+print(info.values()) # Accessing values of their corresponding keys
+# Accessing multiple values
+for key in info.keys():
+    print(info[key])
