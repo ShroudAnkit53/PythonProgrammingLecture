@@ -1,0 +1,42 @@
+# Some basic methods requires for dictionary
+
+# First Method:- update() -> update the dictionary
+
+# First example:-
+info = {
+    "Name":"Karan",
+    "Age": 19,
+    "Eligible": True
+}
+print(info)
+info.update({"Age":20})
+info.update({"DOB": 2004})
+print(info)
+
+# Second Example:-
+ep1 = {"A":1,"B":2,"C":3}
+ep2 = {"D":4}
+ep1.update(ep2)
+print(ep1)
+
+# Second method:- clear() -> clear the dictionary
+ep1 = {"A":1,"B":2,"C":3}
+ep1.clear()
+print(ep1)
+
+# Third Method:- pop() -> This method removes the key-value pair whose key is passed as a parameter
+# Fourth Method:- popitem() -> This method removes the last key-value pair
+info = {
+    "Name":"Karan",
+    "Age": 19,
+    "Eligible": True
+}
+info.popitem()
+print(info)
+info.pop("Name")
+print(info)
+
+# Fifth Method:- del -> it deletes the key-value pair
+ep1 = {"A":1,"B":2,"C":3}
+del ep1["B"]
+print(ep1)
