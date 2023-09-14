@@ -1,0 +1,30 @@
+# Exception Handling:-
+# It is the process of responding to unwanted or unexpected events when a computer program runs. Exception Handling deals with these events to avoid the program or system crashing and without this process,exceptions would disrupt the normal operation of a program.
+
+# Exceptions in Python:-
+# Python has many built-in exceptions that are raised when your program encounters an error(something in the program goes wrong)
+
+# First example
+try:
+    num = int(input("Enter index: "))
+    a=[5,6,7]
+    print(a[num])
+except Exception as e:
+    print(e)
+
+# Second example
+try:
+    num = int(input("Enter an integer"))
+    print("Entered value is an integer")
+except ValueError:
+    print("Entered value is not an integer")
+
+# Third Example
+a = int(input("Enter number for which you want the multiplication table: "))
+# If we use string input and don't use try and except then it will halt the code and stop there
+print(f"Multiplication table of {a} is: ")
+try:
+    for i in range(1,11):
+        print(f"{int(a)} X i = {int(a)*i}")
+except:
+    print("Invalid input!!")
