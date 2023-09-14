@@ -1,0 +1,23 @@
+# First example
+for i in [4]:
+    print(i)
+else:
+    print("Sorry no i")
+
+# Another example
+for i in range(8):
+    print(i)
+    if i == 5:
+        break  # at i = 5 it will break and not print the else statement
+else:
+    print("Sorry no i")
+
+# Third example
+i = 0
+while i < 7:
+    print(i)
+    i += 1
+    if i == 4:
+        break
+else:
+    print("Sorry no i")
