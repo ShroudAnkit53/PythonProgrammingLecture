@@ -1,5 +1,6 @@
 # Exception Handling:-
-# It is the process of responding to unwanted or unexpected events when a computer program runs. Exception Handling deals with these events to avoid the program or system crashing and without this process,exceptions would disrupt the normal operation of a program.
+# It is the process of responding to unwanted or unexpected events when a computer program runs. Exception Handling deals with these events to avoid the program or system crashing
+and without this process,exceptions would disrupt the normal operation of a program.
 
 # Exceptions in Python:-
 # Python has many built-in exceptions that are raised when your program encounters an error(something in the program goes wrong)
