@@ -1,0 +1,16 @@
+# Raising Custom Errors:-
+# In python,we can raise custom errors by using the 'raise' keyword.
+salary = int(input("Enter salary amount:"))
+if not 10000<=salary<35000:
+    raise ValueError("Not a valid salary!!")
+
+# Defining Custom Errors:-
+# The syntax to define custom exceptions:
+# class CustomError(Exception):
+#     code....
+#     pass
+
+# try:
+#     code....
+# except CustomError:
+#     code....
