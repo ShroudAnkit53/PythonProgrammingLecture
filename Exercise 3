@@ -1,0 +1,67 @@
+# Write a program for secret code language and reverse of that input code.
+
+# Define a dictionary for character substitution
+code_dict = {
+    'a': '+', 'b': '-',
+    'c': '_', 'd': '=',
+    'e': '(', 'f': ')',   # In coding process, 'a' will converted to '+' 
+    'g': '*', 'h': '/',   # In decoding process, just opposite of coding process 
+    'i': '&', 'j': '|',   # This process will happen if the user input given by user is present in code_dict(dictionary)
+    'k': '^', 'l': '%',   # e.g if we enter a message like 7789 then we don't have alternative language in that dictionary so in that both process out put will be 7789
+    'm': '$', 'n': '#',
+    'o': '!', 'p': '~',
+    'q': ';', 'r': '\?',
+    's': '<', 't': '>',
+    'u': '{', 'v': '}',
+    'w': '[', 'x': '><',
+    'y': ']', 'z': ':',
+    '1': 'A', '2': 'C',
+    '3': 'E', '4': 'I',
+    '5': 'G', '6': 'K',
+}
+
+# Function to encode a message into secret code
+def encode_message(message):
+    encoded_message = ""
+    for char in message.lower():
+        if char in code_dict:
+            encoded_message += code_dict[char]
+        else:
+            encoded_message += char
+    return encoded_message
+
+# Function to decode a secret code back to the original message
+def decode_message(encoded_message):
+    decoded_message = ""
+    reverse_dict = {value: key for key, value in code_dict.items()}
+    for char in encoded_message:
+        if char in reverse_dict:
+            decoded_message += reverse_dict[char]
+        else:
+            decoded_message += char
+    return decoded_message
+
+# Main program
+while True:
+    print("1. Encode a message")
+    print("2. Decode a message")
+    print("3. Quit")
+    choice = input("Enter your choice: ")
+
+    if choice == '1':
+        message = input("Enter the message to encode: ")
+        encoded_message = encode_message(message)
+        reverse = message[::-1]
+        print("Reverse of the message: ",reverse)
+        print("Encoded message:", encoded_message)
+    elif choice == '2':
+        encoded_message = input("Enter the encoded message to decode: ")
+        decoded_message = decode_message(encoded_message)
+        reverse = message[::-1]
+        print("Reverse of the message: ",reverse)
+        print("Decoded message:", decoded_message)
+    elif choice == '3':
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
