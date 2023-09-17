@@ -1,0 +1,7 @@
+# Enumerate function:-
+# The enumerate function is a built-in function in Python that allows you to loop over a sequence(such as a list,tuple or string) and get the index and value of each
+element in the sequence at the same time.
+
+fruits = ['Apple', 'Orange', 'Banana', 'Strawberry', 'Grape']
+for index, fruit in enumerate(fruits):
+    print(index, "->", fruit)
