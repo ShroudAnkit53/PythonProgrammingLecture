@@ -1,0 +1,29 @@
+# Create a simple Snake,water and gun game. It is very similar to the game Rock,paper and scissors.
+# Here, the rules are:-
+# if user shows snake and computer shows water, then snake will drink water and snake wins and vice-versa.
+# if user shows snake and computer shows gun, then gun will kill the snake and gun wins and vice-versa.
+# if user shows water and computer shows gun, then water will damage the gun and water wins and vice-versa.
+import random
+
+user_action = input("Enter a choice (snake, water, gun): ")
+possible_actions = ["snake", "water", "gun"]
+computer_action = random.choice(possible_actions)
+print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+
+if user_action == computer_action:
+    print(f"Both players selected {user_action}. It's a tie!")
+elif user_action == "snake":
+    if computer_action == "water":
+        print("Snake drank water! You win!")
+    else:
+        print("Gun killed snake! You lose.")
+elif user_action == "water":
+    if computer_action == "gun":
+        print("Water damaged the gun! You win!")
+    else:
+        print("Snake drank water! You lose.")
+elif user_action == "gun":
+    if computer_action == "snake":
+        print("Gun killed snake! You win!")
+    else:
+        print("Water damaged the gun! You lose.")
