@@ -1,0 +1,46 @@
+Day45_harry.py we have created this file first
+name = input("Enter your name:")
+
+def welcome():
+    print("Hey,you are welcome by",name)
+
+def goodbye():
+    print("Hey,Goodbye!! for now. We will meet tommorow")
+
+print(__name__)
+if __name__ == "__main__":
+    welcome()
+    goodbye()
+
+# When we run that code from this module then we will shown that print(__name__) will show output as __main__
+
+Output if we run code from this file:-
+Enter your name: Ankit
+__main__
+Hey,you are welcome by  Ankit
+Hey,Goodbye!! for now. We will meet tommorow
+
+Day45_main.py
+# if "__name__ == __main__" in python:-
+# The if __name__ == "__main__" idiom is a common pattern used in Python Scripts to determine whether the script is being run directly or being imported as a module into another script
+
+import Day45_harry 
+Day45_harry.welcome()
+Day45_harry.goodbye()
+
+# When we run that code from this module then we will shown that print(__name__) will show output as Day45_harry
+
+# name = input("Enter your name:")
+
+# def welcome():
+#     print("Hey,you are welcome by",name)
+
+# def goodbye():
+#     print("Hey,Goodbye!! for now. We will meet tommorow")
+# Above code was imported here by using import Day45_harry
+
+Output if we run code from this file:-
+Enter your name: Ankit
+Day45_harry
+Hey,you are welcome by  Ankit
+Hey,Goodbye!! for now. We will meet tommorow
