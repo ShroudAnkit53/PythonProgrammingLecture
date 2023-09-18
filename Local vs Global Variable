@@ -1,0 +1,34 @@
+# Local and Global Variable:-
+
+# -> A variable is a named location in a memory that stores a value.In Python,we can assign values to variables using the assignment operator =. For example :
+# x = 5
+# y = "Hello World!!"
+
+# Local Variable -> A local variable is a variable that is defined within a function and is only accessible within that function. It is created when the function is called and is destroyed when the function returns.
+
+# Global Variable -> On the other hand, a global variable is a variable that is defined outside of a function and is accessible from within any function in your code.
+
+x = 4    # This x = 4 is global variable 
+# print(x) -> It will print the same
+
+def hello():
+    x = 6    # This x = 6 is local variable of function hello()
+    y = 3
+    print(f"The local x is {x}")   
+    print("Hello World!!")
+
+print(f"The global x is {x}")
+hello()
+# print(y) -> Here, it will show error as y = 3 is local variable and just like a property of hello().It can be only printed inside the hello()
+
+# Use of 'Global' keyword
+x = 10 # Global Variable
+
+def number():
+    global x
+    x = 4
+    y = 5
+    print(y)
+
+number()
+print(x) # Here,it will print 4 as x = 4 become global now
