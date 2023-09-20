@@ -1,0 +1,18 @@
+# def double(x):
+#     return x**2
+
+# print(double(5))
+
+# -> In python, a lambda function is a small anonymous function without a name.It is defined using the lambda keyword and has the following syntax:-
+# lambda arguements: expression
+
+square = lambda x: x**2
+print(square(5))
+
+cube = lambda x: x*x*x
+print(cube(5))
+
+def apply(fx,value):
+    return 6 + fx(value)
+
+print(apply(square,2))  # Here, fx= square function and value is 2.Hence we can pass a function in another function
