@@ -1,0 +1,19 @@
+a = [1,2] # it is lists
+b = [1,2]
+
+print(a is b) # exact location of object in memory
+print(a == b) # value
+
+a = (3,4) # Tuples are immutable
+b = (3,4)
+
+print(a is b) # exact location of object in memory
+print(a == b) # value
+
+# Immutable functions which ones created can't be changed.This means that, for strings and integers 'is' and '==' remains same.
+
+a = "ankit"
+b = "adarsh"
+
+print(a is b) # exact location of object in memory
+print(a == b) # value
