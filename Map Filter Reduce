@@ -1,0 +1,47 @@
+# Map:-
+# The map function applies a function to each element in a sequence and returns a new sequence containing the transformed elements. The map function has the following syntax:
+# ..... map(function, iterable)
+
+def cube(x):
+    return x ** 3
+
+print(cube(3))
+
+l = [1, 2, 4, 6, 4, 3] # List of numbers
+# First way:-
+newl = []
+for item in l:
+    newl.append(cube(item))
+
+print(newl)
+
+# Second Way:-
+newl = list(map(cube, l))   # Map function
+print(newl)
+
+# Filter:-
+# The filter function filters a sequence of elements based on a given predicate(a function that returns a boolean value) and returns a new sequence containing only the elements that meet the predicate/condition.The filter function has the following syntax:-
+# ..... filter(predicate, iterable)
+
+l = [2, 5, 9, 3, 7] # List of numbers
+def filter_function(a):
+    return a > 4
+
+newl = list(filter(filter_function, l)) # Filter function
+print(newl)
+
+# Reduce:-
+# The reduce function is a higher-order function that applies a function to a sequence and returns a single value.It is a part of the functions module in Python and has the following syntax:-
+# ..... reduce(function, iterable)
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5] # List of numbers
+
+def mysum(x,y):
+    return x+y
+
+sum = reduce(mysum, numbers)
+
+print(sum)
+
