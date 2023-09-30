@@ -1,0 +1,14 @@
+# A class is a blueprint or a template for creating objects,providing initial values for state(member variables or attributes),and implementations of behavior(member functions or
+methods).The user-defined objects are created using the class keyword.
+
+class Person:
+  Name = "Ankit"
+  Occupation = "Software Developer"
+  Salary = 50000
+  def info(self):
+    print(f"{self.Name} is a {self.Occupation} earns {self.Salary}")
+
+a = Person()
+print(a.Name, a.Occupation, a.Salary)
+
+a.info() # It will print {self.Name} is a {self.Occupation} earns {self.Salary}
