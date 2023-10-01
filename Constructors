@@ -1,0 +1,21 @@
+# A constructor is a special method in a class used to create and initialize an object of a class. There are different types of constructors. Constructor is involved automatically 
+when an object of a class is created.
+
+class Person:
+
+    def __init__(self, n , o , s):  # Created a constructor
+       self.Name = n
+       self.Occupation = o
+       self.Salary = s
+
+    def info(self):
+        print(f"{self.Name} is a {self.Occupation} earns {self.Salary}")
+
+a = Person("Ankit","Developer",65000)
+b = Person("Adarsh","HR",70000)
+a.info()
+b.info()
+
+# Types of Constructor in Python:-
+# -> Parametrized Constructor
+# -> Default Constructor
