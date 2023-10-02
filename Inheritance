@@ -1,0 +1,37 @@
+# Inheritance in Python:-
+# When a class derives from another class.The child class will inherit all the public and protected properties and methods from the parent class.In addition,it can have its 
+own properties and methods,this is called as Inheritance.
+
+# Python Inheritance Syntax:-
+#  class BaseClass:
+#      Body of base class
+#  class DerivedClass(BaseClass):
+#      Body of derived class
+        
+# Types of Inheritance:
+# -> Single Inheritance
+# -> Multiple Inheritance
+# -> Multilevel Inheritance
+# -> Hierarchial Inheritance
+# -> Hybrid Inheritance
+
+class Employee:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+    
+    def ShowDetails(self):
+        print(f"The Name of Employee: {self.name}, with ID: {self.id}")
+
+class Programmer(Employee):
+    def ShowLanguage(self):
+        print("Default Language is Python")
+
+
+e1 = Programmer("Ankit", 350)
+e1.ShowDetails()
+e1.ShowLanguage()
+
+e2 = Employee("Adarsh", 890)  # AttributeError: 'Employee' object has no attribute 'ShowLanguage'
+e2.ShowDetails()
+e2.ShowLanguage()
